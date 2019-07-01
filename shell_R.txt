@@ -1,0 +1,36 @@
+
+
+library(BioCircos)
+
+myGenome = list(
+)
+
+links_chromosomes_1 = c(
+)
+
+links_chromosomes_2 = c(
+)
+
+links_pos_1 = c(
+)
+
+links_pos_2 = c(
+)
+
+links_labels = c(
+)
+
+
+tracklist = BioCircosBackgroundTrack("myBackgroundTrack", minRadius = 0, maxRadius = 0.9,
+  borderSize = 0, fillColors = "#EEFFEE") 
+
+tracklist = tracklist + BioCircosLinkTrack('myLinkTrack', links_chromosomes_1, links_pos_1,
+  links_pos_1 , links_chromosomes_2, links_pos_2, links_pos_2 ,
+  maxRadius = 0.9)
+
+BioCircos(tracklist, genome = myGenome,
+  chrPad = 0.02, displayGenomeBorder = FALSE, yChr =  FALSE,
+  genomeTicksDisplay = FALSE,  genomeLabelTextSize = "8pt", genomeLabelDy = 5)
+
+
+
