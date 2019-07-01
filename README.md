@@ -15,15 +15,27 @@ steps to run:
 
 > ./run_BUSCO.py -i SEQUENCE_FILE -o OUTPUT_NAME -l LINEAGE -m geno 
 
-2. provide full*tsv files and fasta files of both genomes to study
+2. provide full.tsv files and fasta files of both genomes to study. Currently requires running with shell_R.txt, palette.txt and transparent_palette.txt in working directory.
 
 > ./generate_Rscript.sh full_busco_genome1.tsv full_busco_genome2.tsv genome1.fasta genome2.fasta
 
-3. run the Rscript "busco_dot.R" in R/Rstudio
+3. run the Rscript "busco_dot.R" in R/Rstudio.
 
 > source("busco_dot.R", echo = TRUE)
 
 
 The output should resemble something like this...
 
-![Image of canu_scaf](https://github.com/hlmwhite/PhD_scripts/blob/master/canu_scaf.png)
+![Image of canu_scaf](https://github.com/hlmwhite/synteny_from_BUSCOs/blob/master/synteny_from_busco.out.png)
+
+### why do this?
+
+The tool should hopefully provide a quick and simple method to observe relationships and conserved synteny between complete/near complete genomes of related organisms. 
+
+### need to do...
+
+1. maybe change fasta inputs to chrom.sizes files
+2. how to denote genome 1 and 2 in the plot
+3. output chromosome/scaffold names and sizes to R terminal (any other important info? e.g  num BUSCOs)
+4. rename chromosome/scaffold names in fasta and in .tsv files? easier for R!
+5. direct output to .png/.jpg
