@@ -72,7 +72,7 @@ cat links.table | cut -f 2 | sort | uniq > gen1_buscos_only
 
 num_colours=$(wc -l gen1_buscos_only | awk '{print $1}' )
 
-head -n $num_colours transparent_pallete.txt > colours_to_use.txt
+head -n $num_colours transparent_palette.txt > colours_to_use.txt
 
 #paste gen1_buscos_only colours_to_use.txt > busco_chrom_colours.tbl
 paste <(grep -f gen1_buscos_only 1.sizes | cut -f 2 ) colours_to_use.txt > busco_chrom_colours.tbl
