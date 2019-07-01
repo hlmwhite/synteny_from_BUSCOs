@@ -125,6 +125,6 @@ echo 'tracklist = BioCircosBackgroundTrack("myBackgroundTrack", minRadius = 0, m
 
 echo 'BioCircos(tracklist, genome = myGenome, genomeFillColor = c('$scaff_col_pal'), chrPad = 0.02, displayGenomeBorder = FALSE, yChr =  FALSE, genomeTicksDisplay = FALSE,  genomeLabelTextSize = 0, genomeLabelDy = 
 
-cat <(head -n 5 shell_R ) genome.list body1 body2 body3 body4 > ../busco_dot.R
+cat <(head -n 5 shell_R.txt ) genome.list body1 body2 body3 body4 > ../busco_dot.R
 
 
