@@ -39,3 +39,4 @@ The tool should hopefully provide a quick and simple method to observe relations
 3. output chromosome/scaffold names and sizes to R terminal (any other important info? e.g  num BUSCOs)
 4. rename chromosome/scaffold names in fasta and in .tsv files? easier for R!
 5. direct output to .png/.jpg
+6. probably need to "clean up" the bash script
