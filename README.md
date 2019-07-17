@@ -15,7 +15,7 @@ steps to run:
 
 > ./run_BUSCO.py -i SEQUENCE_FILE -o OUTPUT_NAME -l LINEAGE -m geno 
 
-2. provide full.tsv files and fasta files of both genomes to study. Currently requires running with shell_R.txt, palette.txt and transparent_palette.txt in working directory.
+2. provide full.tsv files and fasta files of both genomes to study. Currently requires running with palette.txt and transparent_palette.txt in working directory.
 
 > ./generate_Rscript.sh full_busco_genome1.tsv full_busco_genome2.tsv genome1.fasta genome2.fasta
 
