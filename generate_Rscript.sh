@@ -149,5 +149,5 @@ else
 	echo 'BioCircos(tracklist, genome = myGenome, genomeFillColor = c('$scaff_col_pal'), chrPad = 0.01, displayGenomeBorder = FALSE, yChr =  FALSE, genomeTicksDisplay = FALSE,  genomeLabelTextSize = 0, genomeLabelDy = 5)' > body4
 fi
 
-cat <(head -n 5 shell_R ) genome.list body1 body2 body3 body4 > ../busco_dot.R
+cat <(printf "library(BioCircos)\n\nmyGenome = list(" ) genome.list body1 body2 body3 body4 > ../busco_dot.R
 
