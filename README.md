@@ -40,3 +40,7 @@ The tool should hopefully provide a quick and simple method to observe relations
 4. rename chromosome/scaffold names in fasta and in .tsv files? easier for R!
 5. direct output to .png/.jpg
 6. probably need to "clean up" the bash script and "shell_R" file
+7. output other useful info - e.g. % of genome containing complete buscos, and therefore % missing from plot, etc
+
+
+
