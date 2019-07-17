@@ -9,7 +9,7 @@ Currently requires:
 
 steps to run:
 
-0. optional step - rename fasta headers (e.g. >chr1, >chr2, etc). Stops R getting stuck on funny characters!
+0. optional step - rename fasta headers (e.g. >chr1, >chr2, etc). Stops R getting stuck on funny characters
 
 1. run BUSCO over each genome of interest. Make sure to use the same database between genomes!!!
 
