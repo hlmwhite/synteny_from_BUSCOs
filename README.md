@@ -2,7 +2,7 @@
 Generate draft genome synteny between related organisms using BUSCO (.tsv) output.
 
 Currently requires:
-- BUSCO (https://busco.ezlab.org/)
+- BUSCO (https://busco.ezlab.org/) (tested using BUSCO version 3)
 - exonerate utility 'fastalength' (https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate)
 - R (or Rstudio for plot viewing, rather than through html) 
 - R package BioCircos (https://cran.r-project.org/web/packages/BioCircos/vignettes/BioCircos.html)
