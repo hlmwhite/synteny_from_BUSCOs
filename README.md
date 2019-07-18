@@ -41,6 +41,6 @@ The tool should hopefully provide a quick and simple method to observe relations
 5. direct output to .png/.jpg
 6. probably need to clean up the bash script 
 7. output other useful info - e.g. % of genome containing complete buscos, and therefore % missing from plot, etc
-
+8. add an option for colourblind colour palette
 
 
