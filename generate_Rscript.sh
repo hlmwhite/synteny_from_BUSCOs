@@ -33,7 +33,6 @@ cp $4 work_dir_synteny/2.fa
 
 cd work_dir_synteny
 
-cp ../shell_R .
 cp ../pallete.txt .
 cp ../transparent_pallete.txt .
 
