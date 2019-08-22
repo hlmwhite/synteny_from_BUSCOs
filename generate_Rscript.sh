@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# BUSCO dot plots
+# Assess synteny of BUSCO genes between two genomes
 
-# how to run: generate_R_script.sh genome1.tsv genome2.tsv genome1.fa genome2.fa
+# how to run: generate_R_script.sh genome1.tsv genome2.tsv genome1.fa genome2.fa <no-pad> <names>
 
 if [ "$#" == 0 ]; then
 echo ''
@@ -149,5 +149,5 @@ else
 	echo 'BioCircos(tracklist, genome = myGenome, genomeFillColor = c('$scaff_col_pal'), chrPad = 0.01, displayGenomeBorder = FALSE, yChr =  FALSE, genomeTicksDisplay = FALSE,  genomeLabelTextSize = 0, genomeLabelDy = 5)' > body4
 fi
 
-cat <(printf "library(BioCircos)\n\nmyGenome = list(" ) genome.list body1 body2 body3 body4 > ../busco_dot.R
+cat <(printf "library(BioCircos)\n\nmyGenome = list(" ) genome.list body1 body2 body3 body4 > ../synteny_genes.R
 
