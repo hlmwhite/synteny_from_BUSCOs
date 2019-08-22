@@ -19,9 +19,9 @@ steps to run:
 
 > ./generate_Rscript.sh full_busco_genome1.tsv full_busco_genome2.tsv genome1.fasta genome2.fasta
 
-3. run the Rscript "busco_dot.R" in R/Rstudio.
+3. run the Rscript "synteny_genes.R" in R/Rstudio.
 
-> source("busco_dot.R", echo = TRUE)
+> source("synteny_genes.R", echo = TRUE)
 
 
 The output should resemble something like this...
